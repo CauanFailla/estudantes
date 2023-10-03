@@ -1,0 +1,116 @@
+@charset  "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --cor1: #2C3E50;
+    --cor2: #E74C3C;
+    --cor3: #ECF0F1;
+    --cor4: #3498DB;
+    --cor5: #2980B9;
+}
+
+body {
+    height: 94vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+header {
+    background-color: #E74C3C;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+main .navegação {
+    position: relative;
+    padding: 23px;
+    height: 100%;
+    background-color: #E74C3C;
+    
+}
+
+main .conteudo {
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo-lembretes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0px;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo-lembretes .lembrete {
+    width: 240px;
+    height: 510px;
+    border: 1px solid rgb(167, 167, 167);
+    text-align: center;
+}
+
+.im {
+    text-align: center;
+    background-image: url('../imagens/castle-5116436_640.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.cont-navegação {
+    transform: translateY(540px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.cont-navegação .menu {
+    justify-self: center !important;
+}
+
+.menu {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    color: white;
+    gap: 20px;
+    user-select: none;
+    width: 100%;
+    
+
+}
+
+.menu span {
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+}
+
+.menu span:hover {
+    color: rgb(187, 187, 187);
+}
+
+.btnMore-menu {
+    transform: rotate(0deg);
+    font-size: 2em !important;
+    cursor: pointer;
+}
